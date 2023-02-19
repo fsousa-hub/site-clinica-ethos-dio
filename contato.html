@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Ethos</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .logradouro {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 4px;
+            width: 95%;
+
+        }
+
+        .address {
+            width: 90%;
+            height: 200px;
+        }
+
+        .formulario {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            border-radius: 4px;
+        }
+
+        .form-lines {
+            padding: 1px;
+            border-color: #336699;
+        }
+
+        #form-center {
+            display: flex;
+            justify-content: center;
+            height: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Criar Container Main -->
+    <main class="main-container">
+        <!-- Aqui vai o menu -->
+        <nav class="menu">
+            <ul id="navbar" class="container">
+                <li><a rel="next" href="index.html">Página Principal</a></li>
+                <li><a rel="next" href="sobre.html">Sobre a Clínica</a></li>
+                <li><a rel="next" href="horario.html">Horário de Atendimento</a></li>
+                <li><a rel="next" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Criar Section: Header - Article - Footer -->
+        <section class="main">
+
+            <!-- Aqui vai o Header -->
+            <header class="header">
+
+                <div>
+                    <img src="./imagens/imagem-capa-3.jpg"
+                        alt="Imagem de capa de uma médica com estetoscópio no pescoço e ao fundo e embaçado, outro médico levemente inclinado em uma mesa.">
+                </div>
+
+            </header>
+
+            <!-- Aqui vai conteúdo -->
+            <article class="content-externo">
+                <div class="container">
+                    <fieldset class="logradouro">
+                        <legend>Endereço:</legend>
+                        <div class="address">
+                            <div class="container">
+                                <p>
+                                    <strong>Endereço: </strong>Rua Ana Pereira Melo, 253 - Térreo<br>
+                                    <strong>Bairro: </strong>Vila Campesina - Osasco/SP<br>
+                                    <strong>Cep: </strong> 06023-140<br>
+                                    <strong>Telefone: </strong>(11) 3681-1388<br>
+                                    <strong>E-mail:</strong> ethosclinicamedica.com.br<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <div class="container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1828.8581413686134!2d-46.7699551551367!3d-23.542704771563372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x94ceff05a0fc700b%3A0x36d67c0222bb4cc2!2s%C3%89thos%20Cl%C3%ADnica%20M%C3%A9dica%20-%20R.%20Ana%20Pereira%20Melo%2C%20253%20-%20t%C3%A9rreo%20-%20Vila%20Campesina%2C%20Osasco%20-%20SP%2C%2006020-012!3m2!1d-23.544035599999997!2d-46.766554199999995!5e0!3m2!1spt-BR!2sbr!4v1676843636617!5m2!1spt-BR!2sbr"
+                                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" frameborder="1"></iframe>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <h2>Contato:</h2>
+                    <form autocomplete="on" method="get" name="form-contato">
+                        <!--usei o get para não dar erro ao enviar-->
+                        <div class="form-lines">
+                            <label for="--input"><strong>Nome:</strong></label><br>
+                            <input name="nome" type="text"><br>
+                        </div>
+                        <div class="form-lines">
+                            <label for="--input"><strong>E-mail:</strong></label><br>
+                            <input name="email" type="email"><br>
+                        </div>
+                        <div class="form-lines">
+                            <label for="--input"><strong>Assunto:</strong></label><br>
+                            <input name="assunto" type="text"><br>
+                        </div>
+                        <div class="form-lines">
+                            <label for="--textarea"><strong>Mensagem:</strong> </label><br>
+                            <textarea name="mensagem" id="msg" cols="30" rows="4"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn" type="submit">Enviar</button>
+                            <button class="btn" type="reset">Limpar</button></div>
+                    </form>
+                </div>
+
+            </article>
+
+            <!-- Aqui vai o rodapé -->
+            <footer class=" footer">
+                <div id="footer-content">
+                    <div>
+                        <h2>Ajuda</h2>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Reclame Aqui</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Redes Sociais</h2>
+                        <ul>
+                            <li><a target="_blank" rel="external" href="#">Facebook</a></li>
+                            <li><a target="_blank" rel="external" href="#">Instagram</a></li>
+                            <li><a target="_blank" rel="external" href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
